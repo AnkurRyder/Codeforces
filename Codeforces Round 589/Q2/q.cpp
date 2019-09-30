@@ -59,6 +59,11 @@ int main()
                 break;
             if(j == col[i])
             {
+                if(mat[j][i] == 1)
+                {
+                    cout << 0 <<"\n";
+                    return 0;
+                }
                 if(mat[j][i] != 2)
                     t--;
                 mat[j][i] = 2;
